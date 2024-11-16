@@ -1,0 +1,175 @@
+/* Overall Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(10, 10, 40, 0.85); /* Darker, more faded Midnight Blue */
+  color: white;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+.header h1 {
+  color: #A34719; /* Burnt Orange */
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Banner Styling */
+.banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+/* Description Section */
+.description {
+  margin: 20px auto;
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Schedule Button */
+.schedule button {
+  padding: 10px 20px;
+  background-color: #A34719; /* Burnt Orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.schedule button:hover {
+  background-color: #E63E00; /* Slightly darker burnt orange */
+}
+
+/* Popup Styling */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; /* Ensures the popup itself is scrollable if content overflows */
+}
+
+.popup-content {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; /* Adjust the width of the popup */
+  max-width: 600px; /* Maximum width for larger screens */
+  max-height: 80%; /* Prevents the popup from taking up the full height */
+  overflow-y: auto; /* Makes the popup scrollable if content exceeds height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better visibility */
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.popup-content form input,
+.popup-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-content form button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.popup-content form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.popup-content form button[type="button"] {
+  background-color: #ccc;
+  color: black;
+}
+
+.popup-content form button[type="button"]:hover {
+  background-color: #bbb;
+}
+
+
+/* Value Blocks Section */
+.values {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.value-block {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly faded white */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  color: white;
+}
+
+.value-block h3 {
+  font-size: 1.5rem;
+  color: #A34719; /* Burnt Orange */
+  margin-bottom: 10px;
+}
+
+.value-block p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* About Section */
+.about {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #A34719; /* Burnt Orange */
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 20px;
+}

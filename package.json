@@ -1,0 +1,18 @@
+{
+  "name": "virginialogisticscompany",
+  "version": "1.0.0",
+  "description": "Virginia Logistics Company (VLC) is a modern logistics service focused on providing flexible and efficient Less-Than-Truckload (LTL) solutions across the Mid-Atlantic region. This repository contains the codebase for VLC’s digital operations, including customer request forms, automated quote generation, and scheduling systems. Built with scalability in mind, the project leverages modern web technologies to streamline logistics workflows and enhance customer experience. Contributions and improvements are welcome as we refine tools to optimize logistics and delivery processes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1",
+    "react-router-dom": "^6.28.0"
+  }
+}
