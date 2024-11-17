@@ -3,6 +3,7 @@ import './App.css';
 
 const App = () => {
   const [showForm, setShowForm] = useState(false);
+    const [additionalServices, setAdditionalServices] = useState(false);
 
   const handleOpenForm = () => setShowForm(true);
   const handleCloseForm = () => setShowForm(false);
@@ -15,8 +16,45 @@ const App = () => {
         <p>Efficient, flexible logistics from Baltimore to Richmond</p>
       </header>
 
+      {/* Schedule Button */}
+      <div className="schedule">
+        <button onClick={handleOpenForm}>Schedule Now</button>
+      </div>
+
+      {/* Banner Image */}
+      <div className="banner">
+        <img
+          src="/bannerLogisticsOp.png"
+          alt="Logistics Banner"
+        />
+      </div>
+
+      <section className="use-cases">
+        <h2>Our Services</h2>
+        <div className="use-cases-container">
+          <div className="use-case">
+            <h3>White Glove Delivery</h3>
+            <p>Specialized delivery with extra care for fragile or high-value items.</p>
+          </div>
+          <div className="use-case">
+            <h3>Business Logistics</h3>
+            <p>Efficient logistics solutions for small-scale shipments under 1 pallet.</p>
+          </div>
+          <div className="use-case">
+            <h3>Junk Removal</h3>
+            <p>Fast and reliable removal of unwanted items from your space.</p>
+          </div>
+          <div className="use-case">
+            <h3>Donation Drop-Off</h3>
+            <p>Convenient transportation of items to donation centers like Goodwill.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Value Blocks Section */}
       <section className="values">
+        <h2>Our Values</h2>
+        <div className="values-container">
         <div className="value-block">
           <h3>Respect Your Time</h3>
           <p>Your time is too valuable to waste. We're here to make things easy on you.</p>
@@ -29,6 +67,23 @@ const App = () => {
           <h3>Minimize Cost</h3>
           <p>Our logistics solutions are designed to save you money without compromising quality and efficiency.</p>
         </div>
+        </div>
+      </section>
+
+      {/* Image Showcase */}
+      <section className="image-showcase">
+        <img
+          src="/packageDelivery.png"
+          alt="Package Delivery"
+        />
+        <img
+          src="linehaulLoadOperation.png"
+          alt="LineHaul Load"
+        />
+        <img
+          src="vanOnHighway.png"
+          alt="Highway Driving"
+        />
       </section>
 
       {/* About Statement */}
@@ -44,11 +99,6 @@ const App = () => {
           Let us handle your logistics so you can focus on what matters most to your business.
         </p>
       </section>
-
-      {/* Schedule Button */}
-      <div className="schedule">
-        <button onClick={handleOpenForm}>Schedule</button>
-      </div>
 
       {/* Popup Form */}
       {showForm && (
@@ -85,6 +135,24 @@ const App = () => {
 
               <label>Special Instructions:</label>
               <textarea placeholder="Any special handling instructions" />
+
+              <label>
+              <input
+                type="checkbox"
+                onChange={(e) => setAdditionalServices(e.target.checked)}
+              />
+              Require Additional Services?
+            </label>
+            {additionalServices && (
+              <div>
+                <label>Describe Additional Services:</label>
+                <textarea placeholder="Provide details about additional services required" />
+                <p className="note">
+                  Note: The price of additional services will range between $10-$50 and will
+                  be added to the below quote after review by our team.
+                </p>
+              </div>
+            )}
 
               <label>Availability Calendar:</label>
               <p>(Coming soon: visual calendar with available slots)</p>

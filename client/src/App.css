@@ -129,9 +129,23 @@ body {
 
 /* Value Blocks Section */
 .values {
+  margin: 30px auto; /* Center section horizontally */
+  max-width: 1000px; /* Set a consistent width */
+  text-align: center; /* Center-align text, including the header */
+}
+
+.values h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #A34719; /* Burnt Orange */
+}
+
+/* Values Container */
+.values-container {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 0;
+  justify-content: space-between;
+  gap: 5px; /* Space between the blocks */
+  flex-wrap: wrap; /* Ensures blocks wrap on smaller screens */
 }
 
 .value-block {
@@ -139,13 +153,13 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  width: 30%;
+  width: 28%;
   color: white;
 }
 
 .value-block h3 {
   font-size: 1.5rem;
-  color: #A34719; /* Burnt Orange */
+  #color: #A34719; /* Burnt Orange */
   margin-bottom: 10px;
 }
 
@@ -153,6 +167,79 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+/* Image Showcase Section */
+.image-showcase {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.image-showcase img {
+  width: 30%; /* Adjust the width of the images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-showcase img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+}
+
+
+/* Use Cases Section */
+.use-cases {
+  margin: 30px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.use-cases h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #A34719; /* Burnt Orange */
+}
+
+.use-cases-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between the blocks */
+  flex-wrap: wrap; /* Ensures blocks wrap on smaller screens */
+}
+
+
+.use-case {
+  flex: 1;
+  min-width: 200px; /* Ensures blocks don't shrink too much */
+  max-width: 250px; /* Controls the maximum block width */
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Light overlay background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.use-case:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.use-case h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.use-case p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: white;
+}
+
+
 
 /* About Section */
 .about {

@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build directories
+dist/
+build/
+
+# Environment variables
+.env
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Cache files
+.cache/
+.next/
+out/
+.yarn/
+.pnpm-store/
+
+# Coverage files (from testing frameworks like Jest)
+coverage/
+
+# Generated files
+*.lock
+yarn-error.log
